@@ -454,6 +454,16 @@ img {
     line-height: 2.5;
   }
 
+  .cover {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .works {
+    position: absolute;
+    z-index: 1;
+  }
+
   .works-category summary {
     font-size: 14px;
   }
