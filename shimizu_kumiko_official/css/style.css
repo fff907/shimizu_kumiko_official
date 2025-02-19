@@ -393,6 +393,7 @@ img {
   background-color: #333;
 }
 
+
 /* PC版のみの調整 */
 @media (min-width: 768px) {
   body {
@@ -449,6 +450,10 @@ img {
 
 /* SP版のみの調整 */
 @media (max-width: 768px) {
+  .cover {
+    background-position: center top;
+  }
+  
   .section-title {
     margin: 0.5rem 0;
     line-height: 2.5;
