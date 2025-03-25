@@ -394,7 +394,7 @@ img {
 }
 
 /* PC版のみの調整 */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   body {
     font-size: 1.125rem;
     line-height: 2;
@@ -435,6 +435,7 @@ img {
     background-image: url(../images/cover_bg.png);
     background-size: cover;
     background-position: 18%;
+    box-sizing: border-box;
     overflow: hidden;
   }
 
