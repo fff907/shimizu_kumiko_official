@@ -436,11 +436,7 @@ img {
     background-size: cover;
     background-position: 18%;
     overflow: hidden;
-  }
-
-  .cover img {
-    max-width: 100%;
-  }    
+  } 
 
   .contact_button a {
     display: flex;
