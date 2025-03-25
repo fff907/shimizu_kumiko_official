@@ -35,11 +35,6 @@ img {
 /* 共通のスタイル
 ------------------------------------------------------------*/
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box
-}
-
 /* タイトル */
 .section-heading {
   text-align: center;
@@ -442,6 +437,10 @@ img {
     background-position: 18%;
     overflow: hidden;
   }
+
+  .cover img {
+    max-width: 100%;
+  }    
 
   .contact_button a {
     display: flex;
