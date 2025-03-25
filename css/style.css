@@ -394,7 +394,7 @@ img {
 }
 
 /* PC版のみの調整 */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   body {
     font-size: 1.125rem;
     line-height: 2;
