@@ -149,10 +149,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   background-image: url(../images/cover_sp.png);
-  max-width: 100%;
-  background-size: cover;
+  height: auto;
+  aspect-ratio: 3 / 4; /* 高さの目安比率。画像に合わせて調整してOK */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* メイン
