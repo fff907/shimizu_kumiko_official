@@ -437,6 +437,7 @@ img {
     height: 100vh;
     color: #fff;
     background-image: url(../images/cover_bg.png);
+    aspect-ratio: auto;
     background-size: cover;
     background-position: center;
     overflow: hidden;
