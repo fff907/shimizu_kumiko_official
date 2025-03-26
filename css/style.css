@@ -438,7 +438,7 @@ img {
     color: #fff;
     background-image: url(../images/cover_bg.png);
     background-size: cover;
-    background-position: 18%;
+    background-position: center;
     overflow: hidden;
   }
 
