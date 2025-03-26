@@ -151,11 +151,8 @@ img {
   justify-content: center;
   height: 100vh;
   background-image: url(../images/cover_sp.png);
-  background-size: cover;
-}
-
-.cover img {
   max-width: 100%;
+  background-size: cover;
 }
 
 /* メイン
