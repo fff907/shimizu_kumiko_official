@@ -436,7 +436,7 @@ img {
     z-index: 100;
     width: 100%;
     height: auto;
-    min-height: 100vh;
+    max-height: 100vh;
     color: #fff;
     background-image: url(../images/cover_bg.png);
     aspect-ratio: 16 / 9;
@@ -518,11 +518,5 @@ img {
 
   .footer-copyright {
     font-size: 60%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1620px) {
-  .cover {
-    aspect-ratio: 5 / 3;
   }
 }
