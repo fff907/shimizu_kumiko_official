@@ -520,3 +520,9 @@ img {
     font-size: 60%;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1620px) {
+  .cover {
+    aspect-ratio: 5 / 3;
+  }
+}
