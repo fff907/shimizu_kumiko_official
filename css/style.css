@@ -35,7 +35,6 @@ img {
 /* 共通のスタイル
 ------------------------------------------------------------*/
 
-/* タイトル */
 .section-heading {
   text-align: center;
 }
@@ -397,7 +396,6 @@ img {
 }
 
 /* PC版のみの調整 */
-
 @media (min-width: 768px) {
   body {
     font-size: 1.125rem;
