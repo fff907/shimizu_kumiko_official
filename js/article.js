@@ -1,4 +1,5 @@
 const newsArticles = [
+    { title: "SCREENでの記事一覧", img: "images/author.png", link: "https://screenonline.jp/_fq?p=&q=%E6%B8%85%E6%B0%B4%E4%B9%85%E7%BE%8E%E5%AD%90&k=p", date: "2025-05-07" },
     { title: "Real Soundでの記事一覧", img: "images/author.png", link: "https://realsound.jp/person/about/945255", date: "2025-02-17" },
     { title: "TRILLでの記事一覧", img: "images/trill.jpg", link: "https://trilltrill.jp/search?keyword=%E6%B8%85%E6%B0%B4%E4%B9%85%E7%BE%8E%E5%AD%90", date: "2025-02-12" },
     { title: "U-NEXT SQUAREでの記事一覧", img: "images/square-ogp.png", link: "https://square.unext.jp/member/Kumiko-Shimizu/1", date: "2025-02-02" },
