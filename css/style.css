@@ -500,6 +500,10 @@ img {
     justify-content: space-between;
   }
 
+  .news-card {
+    flex-direction: row;
+  }
+
   .news-card h3 {
     font-size: 1.125rem;
     text-align: left;
@@ -536,4 +540,3 @@ img {
     padding: 2.5rem;
   }
 }
-
