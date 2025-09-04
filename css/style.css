@@ -180,7 +180,7 @@ img {
   justify-content: center;
   background-image: url(../images/cover_sp.png);
   height: auto;
-  padding-top: 166.66%;
+  aspect-ratio: 3 / 5;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
