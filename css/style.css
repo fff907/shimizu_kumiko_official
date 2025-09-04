@@ -77,7 +77,7 @@ img {
   justify-content: space-between;
   z-index: 100;
   height: 3.75rem;
-  padding: 0 0 0 1.25rem;
+  padding: 0 1.25rem;
   box-sizing: border-box;
 }
 
@@ -88,54 +88,56 @@ img {
   letter-spacing: 0.05rem;
 }
 
-/* ハンバーガーメニューボタン */
-.hamburger-button {
+/* ハンバーガーメニュー（三本線ボタン） */
+.header__hamburger {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 3.75rem;
-  height: 3.75rem;
-  font-size: 1.75rem;
-  color: #fff;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.5rem;
+  height: 1.875rem;
+  background: transparent;
+  border: none;
   cursor: pointer;
+  padding: 0;
+  z-index: 110;
 }
 
-/* SPナビゲーション */
-.sp-nav {
-  position: absolute;
-  top: 3.75rem;
+.header__hamburger span {
+  display: block;
+  height: 0.25rem;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+/* ナビゲーション（共通） */
+.global-nav {
+  position: fixed;
+  top: 0;
   left: 0;
-  height: 25.625rem;
-  display: none;
-  z-index: 1000;
   width: 100%;
-  font-size: 1.5rem;
-  text-align: center;
+  height: 100vh;
   background-color: #FFC1A9;
-  border-bottom: #333 1px solid;
-  box-sizing: border-box;
-}
-
-.sp-nav-list li {
-  margin: 3.4375rem 0;
-}
-
-/* PCナビゲーション */
-.pc-nav {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
 }
 
-.pc-nav-list {
+.global-nav.active {
   display: flex;
-  align-items: center;
-  height: 100%;
+}
+
+.nav__list {
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
+  text-align: center;
 }
 
-.pc-nav-list li {
-  margin: 0 0 0 3.125rem;
+.nav__list li {
+  margin: 2rem 0;
+  font-size: 1.5rem;
 }
 
 /* カバー
@@ -156,12 +158,11 @@ img {
 /* メイン
 ------------------------------------------------------------*/
 
-/* Worksセクションの全体レイアウト */
+/* Workセクション */
 .works {
   padding: 0 10% 6.25rem 10%;
 }
 
-/* カテゴリ全体（detailsタグのスタイル） */
 .works-category {
   background: white;
   border-radius: 10px;
@@ -175,7 +176,7 @@ img {
   transform: translateY(-2px);
 }
 
-/* サマリー（クリックで開閉する部分） */
+/* 各Works（クリックで開閉する部分） */
 .works-category summary {
   padding:  1.25rem;
   font-size: 1.375rem;
@@ -216,7 +217,6 @@ img {
   gap: 1.25rem;
 }
 
-/* リストスタイル */
 .works-list {
   list-style: none;
   padding: 0;
@@ -405,12 +405,29 @@ img {
     padding: 0 1.875rem;
   }
 
-  .hamburger-button {
+  /* ハンバーガー非表示（PC） */
+  .header__hamburger {
     display: none;
   }
 
-  .pc-nav {
-    display: block;
+  /* ナビを横並び表示（PC） */
+  .global-nav {
+    position: static;
+    display: flex !important;
+    height: auto;
+    background: transparent;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .nav__list {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  .nav__list li {
+    margin: 0;
+    font-size: 1rem;
   }
 
   .cover {
