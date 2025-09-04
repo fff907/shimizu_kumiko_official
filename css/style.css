@@ -206,7 +206,7 @@ img {
 /* 各Works（クリックで開閉する部分） */
 .works-category summary {
   padding:  1.25rem;
-  font-size: 0.875rem;
+  font-size: 1.375rem;
   font-weight: bold;
   border-bottom: 3px solid #333;
   cursor: pointer;
