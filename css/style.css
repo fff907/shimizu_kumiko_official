@@ -108,6 +108,7 @@ img {
 
 .header__hamburger span {
   display: block;
+  width: 100%;
   height: 2px;
   background-color: #333;
   border-radius: 2px;
@@ -350,6 +351,7 @@ img {
   justify-content: center;
 }
 
+/* 「もっと見る」ボタン */
 #loadMore {
   background: #007BFF;
   color: white;
