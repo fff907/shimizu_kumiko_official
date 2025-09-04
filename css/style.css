@@ -19,11 +19,12 @@ body {
 }
 
 a {
+  color: #fff;
   text-decoration: none;
 }
 
-a:link, a:visited, a:hover, a:active {
-  color: #fff;
+a:hover {
+  opacity: 0.7;
 }
 
 img {
@@ -69,6 +70,10 @@ img {
 
 .header a {
   color: #333;
+}
+
+.header a:hover {
+  color: #666;
 }
 
 .header-inner {
@@ -175,7 +180,7 @@ img {
   justify-content: center;
   background-image: url(../images/cover_sp.png);
   height: auto;
-  aspect-ratio: 3 / 5;
+  padding-top: 166.66%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
