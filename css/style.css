@@ -64,7 +64,6 @@ img {
   top: 0;
   width: 100%;
   z-index: 100;
-  background-color: #FFC1A9;
 }
 
 .header a {
@@ -141,7 +140,6 @@ img {
   transition: opacity 0.3s ease;
 }
 
-/* 表示状態（クラス追加で表示） */
 .global-nav.show {
   opacity: 1;
   pointer-events: auto;
