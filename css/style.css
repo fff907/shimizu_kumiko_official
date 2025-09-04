@@ -64,7 +64,6 @@ img {
   top: 0;
   width: 100%;
   z-index: 100;
-  background-color: transparent;
 }
 
 .header a {
@@ -79,6 +78,7 @@ img {
   height: 3.75rem;
   padding: 0 1.25rem;
   box-sizing: border-box;
+  background-color: transparent;
 }
 
 .header-logo {
