@@ -96,7 +96,6 @@ img {
   justify-content: space-between;
   width: 2.5rem;
   height: 1.3rem;
-  background: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
@@ -151,7 +150,6 @@ img {
   padding: 0;
   margin: 0;
   text-align: center;
-  background-color: transparent;
 }
 
 .nav__list li {
@@ -427,7 +425,6 @@ img {
 
   .header {
     padding: 0 1.875rem;
-    background-color: transparent;
   }
 
   .header__hamburger {
@@ -450,7 +447,6 @@ img {
     margin: 0;
     padding: 0;
     gap: 2.5rem;
-    background-color: transparent;
   }
 
   .nav__list li {
