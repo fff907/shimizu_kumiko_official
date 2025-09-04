@@ -78,7 +78,6 @@ img {
   height: 3.75rem;
   padding: 0 1.25rem;
   box-sizing: border-box;
-  background-color: transparent;
 }
 
 .header-logo {
@@ -426,6 +425,7 @@ img {
 
   .header {
     padding: 0 1.875rem;
+    background-color: transparent;
   }
 
   .header__hamburger {
