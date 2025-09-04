@@ -232,8 +232,7 @@ img {
 .works-content {
   padding: 0.9375rem 1.25rem;
   height: 0;
-  display: none;
-  transition: height 0.3s ease-out;
+  overflow: hidden;
 }
 
 .works-category[open] .works-content {
@@ -244,7 +243,6 @@ img {
 
 .works-grid {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 1.25rem;
 }
 
@@ -281,7 +279,6 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
   gap: 0.9375rem;
-  height: auto;
   margin-bottom: 1.25rem;
 }
 
@@ -369,8 +366,7 @@ img {
 }
 
 .contact_description {
-  margin: 0 1.1875rem;
-  margin-bottom: 3.125rem;
+  margin: 0 1.1875rem 3.125rem;
   text-align: center;
 }
 
@@ -406,7 +402,7 @@ img {
   font-size: 0.875rem;
   text-align: center;
   color: #fff;
-  background-color: #333;
+  background: #000;
 }
 
 /* PC版のみの調整 */
