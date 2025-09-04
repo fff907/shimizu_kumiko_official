@@ -65,6 +65,8 @@ img {
   top: 0;
   width: 100%;
   z-index: 100;
+  background-color: transparent;
+  color: #fff;
 }
 
 .header a {
@@ -86,6 +88,13 @@ img {
   font-weight: bold;
   line-height: 1;
   letter-spacing: 0.05rem;
+  text-shadow: 1px -1px #333;
+  white-space: nowrap;
+}
+
+.header-logo a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* ハンバーガーメニュー（三本線ボタン） */
@@ -105,8 +114,21 @@ img {
 .header__hamburger span {
   display: block;
   height: 0.25rem;
-  background-color: #333;
+  background-color: #fff;
   border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.header__hamburger.is-active span:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+
+.header__hamburger.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__hamburger.is-active span:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
 }
 
 /* ナビゲーション（共通） */
@@ -116,16 +138,21 @@ img {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #FFC1A9;
-  display: none;
+  background-color: rgba(43, 43, 43, 0.95);
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
-.global-nav.active {
-  display: flex;
+/* 表示状態（クラス追加で表示） */
+.global-nav.show {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .nav__list {
@@ -138,6 +165,17 @@ img {
 .nav__list li {
   margin: 2rem 0;
   font-size: 1.5rem;
+}
+
+.nav__list a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px -1px #333;
+  transition: opacity 0.3s;
+}
+
+.nav__list a:hover {
+  opacity: 0.7;
 }
 
 /* カバー
@@ -405,23 +443,26 @@ img {
     padding: 0 1.875rem;
   }
 
-  /* ハンバーガー非表示（PC） */
   .header__hamburger {
     display: none;
   }
 
-  /* ナビを横並び表示（PC） */
   .global-nav {
     position: static;
-    display: flex !important;
+    opacity: 1;
+    pointer-events: auto;
     height: auto;
-    background: transparent;
-    flex-direction: row;
-    justify-content: flex-end;
+    background-color: transparent;
+    display: block;
   }
 
   .nav__list {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
     gap: 2.5rem;
   }
 
@@ -458,7 +499,7 @@ img {
 }
 
 /* SP版のみの調整 */
-@media (max-width: 768px) {  
+@media (max-width: 768px) {
   .section-title {
     margin: 0.5rem 0;
     line-height: 2.5;
