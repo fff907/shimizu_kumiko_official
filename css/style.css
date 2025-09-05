@@ -195,6 +195,12 @@ img {
   padding: 0 10% 6.25rem 10%;
 }
 
+.works-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+/* アコーディオン全体の枠 */
 .works-category {
   background: white;
   border-radius: 10px;
@@ -203,14 +209,9 @@ img {
   overflow: hidden;
 }
 
-.works-category[open] {
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-}
-
-/* 各Works（クリックで開閉する部分） */
-.works-category summary {
-  padding:  1.25rem;
+/* タイトル部分（クリック対象） */
+.works-title {
+  padding: 1.25rem;
   font-size: 1.375rem;
   font-weight: bold;
   border-bottom: 3px solid #333;
@@ -222,29 +223,19 @@ img {
   transition: background-color 0.3s ease;
 }
 
-.works-category summary:hover {
+.works-title:hover {
   background-color: #f0f0f0;
 }
 
-.works-category summary::-webkit-details-marker {
-  display: none;
-}
-
+/* アコーディオンの中身：初期は非表示 */
 .works-content {
+  display: none;
   padding: 0.9375rem 1.25rem;
-  height: 0;
-  overflow: hidden;
 }
 
-.works-category[open] .works-content {
-  height: auto;
+/* 開いたときだけ表示 */
+.works-content.is-open {
   display: block;
-  padding: 0.9375rem 1.25rem;
-}
-
-.works-grid {
-  display: grid;
-  gap: 1.25rem;
 }
 
 .works-list {
@@ -492,10 +483,6 @@ img {
   .section-title {
     margin: 0.5rem 0;
     line-height: 2.5;
-  }
-
-  .works-category summary {
-    font-size: 0.875rem;
   }
 
   .works, .news {
