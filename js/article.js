@@ -1,3 +1,6 @@
+'use strict';
+
+{
 const newsArticles = [
     { title: "SCREENでの記事一覧", img: "images/author.png", link: "https://screenonline.jp/_fq?p=&q=%E6%B8%85%E6%B0%B4%E4%B9%85%E7%BE%8E%E5%AD%90&k=p", date: "2025-05-07" },
     { title: "Real Soundでの記事一覧", img: "images/author.png", link: "https://realsound.jp/person/about/945255", date: "2025-02-17" },
@@ -26,7 +29,7 @@ const newsMoreContainer = document.querySelector(".news-more");
 let itemsPerPage = 3; // 初期表示数
 let currentIndex = 0;
 
-// **記事を追加する関数**
+// 記事を追加する関数
 function loadNews() {
     const nextItems = newsArticles.slice(currentIndex, currentIndex + itemsPerPage);
 
@@ -48,7 +51,7 @@ function loadNews() {
 
     currentIndex += itemsPerPage;
 
-    // **記事がまだあるなら「もっと見る」ボタンを表示**
+    // 記事がまだあるなら「もっと見る」ボタンを表示
     if (currentIndex < newsArticles.length) {
         newsMoreContainer.style.display = "block";
     } else {
@@ -56,8 +59,9 @@ function loadNews() {
     }
 }
 
-// **初回ロード（最初の3記事を表示）**
+// 初回ロード（最初の3記事を表示）
 loadNews();
 
-// **ボタンを押したら次の記事を追加**
+// ボタンを押したら次の記事を追加
 loadMoreBtn.addEventListener("click", loadNews);
+}
