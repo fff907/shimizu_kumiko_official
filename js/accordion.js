@@ -1,6 +1,12 @@
-document.querySelectorAll(".toggle-btn").forEach(button => {
-    button.addEventListener("click", function () {
-      const content = this.nextElementSibling;
-      content.style.display = content.style.display === "block" ? "none" : "block";
+'use strict';
+
+{
+  const buttons = document.querySelectorAll('.toggle-btn');
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const content = btn.nextElementSibling;
+      content.classList.toggle('is-open');
     });
   });
+}
